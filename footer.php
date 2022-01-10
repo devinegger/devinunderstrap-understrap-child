@@ -62,6 +62,36 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 </div><!-- #page we need this extra closing tag here -->
 
+<!-- if we are on the landing page, show the stinkin' modal! -->
+<?php if ( is_page_template( 'page-templates/page-landing.php' ) ) : ?>
+
+<div id="ctaModal" class="modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Join the Club</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Just sign up...!</p>
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">NAh.</button>
+        <button type="button" class="btn btn-primary">Do it!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php endif ?>
+
 <?php wp_footer(); ?>
 
 </body>

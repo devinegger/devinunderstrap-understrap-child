@@ -14570,6 +14570,16 @@ a.skip-link {
   display: block;
 }
 
+article.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all ease 1s;
+}
+article.card.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
 body.home article,
 body.archive article {
   margin-bottom: 5rem;

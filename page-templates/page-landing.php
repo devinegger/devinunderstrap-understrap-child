@@ -18,27 +18,30 @@ if ( is_front_page() ) {
 }
 ?>
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div class="wrapper bg-secondary" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
 		<div class="row">
 
-			<div class="col-md-12 content-area" id="primary">
+			<div class="col-md-8 offset-md-2 content-area" id="primary">
 
-				<main class="site-main" id="main" role="main">
+				<main class="site-main card" id="main" role="main">
 
-					<?php
-					while ( have_posts() ) {
-						the_post();
-						get_template_part( 'loop-templates/content', 'page' );
+					<div class="card-body">
 
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) {
-							comments_template();
+						<?php
+						while ( have_posts() ) {
+							the_post();
+							get_template_part( 'loop-templates/content', 'page' );
+
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) {
+								comments_template();
+							}
 						}
-					}
-					?>
+						?>
+					</div>
 
 				</main><!-- #main -->
 

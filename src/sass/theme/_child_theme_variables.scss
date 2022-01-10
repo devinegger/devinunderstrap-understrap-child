@@ -3,9 +3,16 @@
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
 
-$teal: #33ffaa; // Thats a sample how you could change a BootStrap variable.
+$teal: #309e70; // Thats a sample how you could change a BootStrap variable.
 $magenta: #8b2568;
 $blue: rgb(25, 33, 158);
 $green: #18660d;
+$darkGrey: #272727;
 
-$primary: $magenta;  // Once we've changed the value, we'll also make it the primary brand color.
+$primary: $teal;  // Once we've changed the value, we'll also make it the primary brand color.
+$secondary: $darkGrey;
+
+$font-family-base: 'Montserrat', sans-serif;
+$headings-font-family: 'Merriweather', serif;
+
+$border-radius: 1rem;

@@ -39,6 +39,7 @@ hr:not([size]) {
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-family: "Merriweather", serif;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -170,11 +171,11 @@ sup {
 }
 
 a {
-  color: #8b2568;
+  color: #309e70;
   text-decoration: underline;
 }
 a:hover {
-  color: #6f1e53;
+  color: #267e5a;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -431,7 +432,7 @@ progress {
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
   --bs-green: #18660d;
-  --bs-teal: #33ffaa;
+  --bs-teal: #309e70;
   --bs-cyan: #0dcaf0;
   --bs-white: #fff;
   --bs-gray: #6c757d;
@@ -445,16 +446,16 @@ progress {
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #8b2568;
-  --bs-secondary: #6c757d;
+  --bs-primary: #309e70;
+  --bs-secondary: #272727;
   --bs-success: #18660d;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 139, 37, 104;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-primary-rgb: 48, 158, 112;
+  --bs-secondary-rgb: 39, 39, 39;
   --bs-success-rgb: 24, 102, 13;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -468,7 +469,7 @@ progress {
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-family: Montserrat, sans-serif;
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
@@ -542,27 +543,27 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #e8d3e1;
-  --bs-table-striped-bg: #dcc8d6;
+  --bs-table-bg: #d6ece2;
+  --bs-table-striped-bg: #cbe0d7;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #d1becb;
+  --bs-table-active-bg: #c1d4cb;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d7c3d0;
+  --bs-table-hover-bg: #c6dad1;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #d1becb;
+  border-color: #c1d4cb;
 }
 
 .table-secondary {
-  --bs-table-bg: #e2e3e5;
-  --bs-table-striped-bg: #d7d8da;
+  --bs-table-bg: #d4d4d4;
+  --bs-table-striped-bg: #c9c9c9;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #cbccce;
+  --bs-table-active-bg: #bfbfbf;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #d1d2d4;
+  --bs-table-hover-bg: #c4c4c4;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #cbccce;
+  border-color: #bfbfbf;
 }
 
 .table-success {
@@ -681,7 +682,7 @@ progress {
   padding: 0.25rem;
   background-color: #fff;
   border: 1px solid #dee2e6;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   max-width: 100%;
   height: auto;
 }
@@ -893,12 +894,12 @@ progress {
 
 .has-teal-color,
 .has-teal-color:visited {
-  color: #33ffaa;
+  color: #309e70;
 }
 
 .has-teal-background-color {
-  background-color: #33ffaa;
-  border-color: #33ffaa;
+  background-color: #309e70;
+  border-color: #309e70;
 }
 
 .has-cyan-color,
@@ -943,22 +944,22 @@ progress {
 
 .has-primary-color,
 .has-primary-color:visited {
-  color: #8b2568;
+  color: #309e70;
 }
 
 .has-primary-background-color {
-  background-color: #8b2568;
-  border-color: #8b2568;
+  background-color: #309e70;
+  border-color: #309e70;
 }
 
 .has-secondary-color,
 .has-secondary-color:visited {
-  color: #6c757d;
+  color: #272727;
 }
 
 .has-secondary-background-color {
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #272727;
+  border-color: #272727;
 }
 
 .has-success-color,
@@ -1141,7 +1142,7 @@ body.understrap-no-sidebar .wp-block-cover.alignwide {
 .wp-block-buttons .wp-block-button .wp-block-button__link {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
 }
 .wp-block-buttons .wp-block-button:not(.is-style-outline) .wp-block-button__link {
   border: 1px solid transparent;

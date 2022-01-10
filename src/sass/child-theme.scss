@@ -9,9 +9,13 @@
 
 // Any additional imported files //
 @import "theme/child_theme";                             // <------- Add your styles into this file
+@import "theme/archive";
+@import "theme/sidebar";
+
 @import "assets/understrap/theme/colors";           // <-------- This creates the necessary bootstrap color classes.
 @import "assets/understrap/theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
 //@import "assets/understrap/theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
 
 // Custom Google Font
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+
